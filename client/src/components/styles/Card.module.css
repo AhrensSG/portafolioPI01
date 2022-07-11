@@ -1,0 +1,77 @@
+
+.card {
+	background-color: rgb(32, 21, 39);
+	opacity: 0.95;
+    margin: 20px;
+	width: 400px;
+	height: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	transition: 200ms;
+
+
+}
+.card:hover{ transform: scale(1.1);}
+.Link{
+	text-decoration: none;
+	color: black;
+}
+.generos{
+	display: flex;
+}
+
+.gral {
+	
+	border: 1px solid rgb(160, 160, 160);
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
+.textCard {
+	color: white;
+	
+	
+}
+
+.nameGenres {
+	width: 210px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.name {
+	font-family: 'RocknRoll One', sans-serif;
+	display: flex;
+	align-items: flex-start;
+	
+}
+
+.img {
+	width: 100px;
+	height: 24vh;
+	width: 300px;
+	overflow: hidden;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.genres {
+
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	align-items: flex-start;
+}
+
+.divRating {
+	color: whitesmoke;
+	border: 2px solid rgb(255, 232, 232);
+	background-color: rgba(34, 0, 93, 0.671);
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

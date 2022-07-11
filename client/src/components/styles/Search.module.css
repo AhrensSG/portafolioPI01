@@ -1,0 +1,25 @@
+.div{
+    margin: 33px 10px -3px;
+    background: none;
+    
+}
+.input {
+    margin: 2px 2px 2px -153px;
+    width: 600px;
+    height: 33px;
+    background: white;
+    border: mediumturquoise;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 2px;
+}
+.bootom{
+    margin: -130px;
+    width: 123px;
+    height: 30px;
+    background: white;
+    border: mediumturquoise;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 2px;
+}

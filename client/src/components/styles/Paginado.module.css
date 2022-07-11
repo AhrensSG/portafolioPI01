@@ -1,0 +1,17 @@
+.ul{
+    display: inline-flex;
+    padding: 0;
+    margin: 24px;
+    list-style-type: none;
+    border: #151316;
+}
+.li{
+    padding: 8px 16px;
+    background: lightslategray;
+    color: white;
+    margin: 10px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}

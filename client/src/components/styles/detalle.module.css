@@ -1,0 +1,38 @@
+.img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+.card{
+
+    background-color: grey;
+    height: 100%;
+    width: 1400px;
+    border-radius: 10px;
+    box-shadow: 0px 22px 23px 3px rgba(0,0,0,0.87);
+
+}
+.card2{
+    margin: 40px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    
+}
+.titulo{
+    font-size: 50px;
+}
+.volver{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin: 30px;
+    float: right;
+    margin-right: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

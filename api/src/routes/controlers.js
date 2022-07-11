@@ -1,29 +1,16 @@
 const axios= require ("axios");
 const { Router } = require('express');
+const Genres = require("../models/Genres");
 
-const getApi= async ()=>{
-    const apiUrl= await axios.get("https://api.rawg.io/api/games?key=f36ebe4de06e48cfbb38c8f780ef290f");
-    const apiData= await apiUrl.data.results.map(e=>{
-        return {
-            id: e.id,
-            img: e.background_image,
-            name: e.name,
-            description: e.description,
-            released: e.released,
-            rating: e.rating,
-            platforms: e.platforms.map(e=>e.platform.name),
-            genres: e.genres.map(e=> e.name)
-        }
-    })
-    
-    return apiData;
-};
+
+
+
 // getApi().then(e=>{console.log(e)});
 
 const getDbInfo = async ()=>{
     return Videogame.findAll({
         include:{
-            model: Gender,
+            model: Genres,
             atributes: ['name'],
             through:{
                 atributes: [],
@@ -37,6 +24,7 @@ const getAllGame= async ()=>{
     const conc= apiInfo.concat(apiDb);
     return await conc;
 };
+
 
 const getApp = async ()=>{
     let all = await getAllGame();
