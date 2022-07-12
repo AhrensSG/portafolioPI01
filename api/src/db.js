@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Sequelize, UnknownConstraintError } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
-const sequelize = require('sequelize');
+// const sequelize = require('sequelize');
 const { workerData } = require('worker_threads');
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
@@ -32,7 +32,7 @@ let sequelize=
         ssl:true,
       })
     : new Sequelize (
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST/development}`,{logging: false, native: false}
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,{logging: false, native: false}
     );
 
 // const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`, {
