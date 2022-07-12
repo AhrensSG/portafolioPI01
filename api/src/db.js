@@ -12,7 +12,7 @@ let sequelize=
     process.env.NODE_ENV==="PRODUCTION"
       ? new Sequelize({
         database: DB_NAME,
-        dialect:"postgres",   "posgres": Unknown word.
+        dialect:"postgres",   
         host: DB_HOST,
         port: 5432,
         username: DB_USER,
@@ -32,8 +32,7 @@ let sequelize=
         ssl:true,
       })
     : new Sequelize (
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST/development}`, "posgres": Unknown word.
-        {logging: false, native: false}
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST/development}`,{logging: false, native: false}
     );
 
 // const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`, {
