@@ -3,7 +3,7 @@ const { Sequelize, UnknownConstraintError } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 // const sequelize = require('sequelize');
-const { workerData } = require('worker_threads');
+// const { workerData } = require('worker_threads');
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
 } = process.env;
